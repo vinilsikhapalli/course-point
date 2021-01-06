@@ -2,16 +2,22 @@
   <div id="app">
     <h1>custom directives</h1>
    <custom-button></custom-button>
+   <!-- <appFilter message="from the data passing through props passing "></appFilter> -->
+   <app-filter></app-filter>
+   <auto-populate-filter></auto-populate-filter>
   </div>
 </template>
 
 <script>
 import customButton from './components/customButton.vue'
-
+import  appFilter  from "./components/appFilter.vue";
+import  autoPopulateFilter from "./components/autoPopulateFilter.vue";
 export default {
   name: 'App',
   components: {
-    customButton
+    customButton,
+    appFilter,
+    autoPopulateFilter
   }
 }
 </script>

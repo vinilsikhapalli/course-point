@@ -1,6 +1,7 @@
 <template>
   <div >
     <p>onclick custom</p>
+    
     <button v-customClick="clicked"> click here for custom button </button>
   </div>
 </template>
@@ -8,6 +9,9 @@
 <script>
 export default {
   name: 'customButton',
+
+
+
   directives:{
     customClick:{
       bind(el,binding){
